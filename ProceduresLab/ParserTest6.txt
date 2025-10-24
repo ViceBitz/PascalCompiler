@@ -1,0 +1,42 @@
+BEGIN
+//READLN(x);
+x := 0;
+WRITELN(x+1);
+x := 2;
+y := x + 1;
+x := x + y;
+WRITELN(x * y);
+IF x > y THEN
+BEGIN
+WRITELN(x);
+WRITELN(y);
+END;
+x := 0;
+
+WHILE x < 10 DO
+BEGIN
+WRITELN(x);
+x := x + 1;
+END;
+
+FOR i := 0 TO 10 DO
+BEGIN
+WRITELN(i);
+END;
+
+prev := 1;
+cur := 1;
+
+WRITELN(99999);
+
+//Fibonacci
+FOR i := 0 TO 20 DO
+BEGIN
+WRITELN(cur);
+temp := cur;
+cur := prev + cur;
+prev := temp;
+END;
+
+END;
+.
